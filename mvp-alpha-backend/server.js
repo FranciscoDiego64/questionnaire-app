@@ -1,9 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors()); // This line enables CORS
+
 
 const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/mydatabase';
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
