@@ -3,6 +3,7 @@ import {
     FETCH_QUESTIONNAIRES,
     FETCH_QUESTIONNAIRES_SUCCESS,
     FETCH_QUESTIONNAIRES_FAILURE,
+    FETCH_QUESTIONNAIRES_REQUEST
   } from './types';
 
 export const fetchQuestionnaires = () => dispatch => {
